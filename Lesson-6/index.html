@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qulix</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="Здесь должно быть фото">
+        <div>
+            <a href="" class="city">New York</a>
+            <i class="fa fa-angle-down"></i>
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-envelope"></i>
+            <a href="">User name
+                <img class="userPhoto" src="images/userPhoto.jpg" alt="Здесь должно быть фото">
+            </a>
+            <form>
+                <input type="search" class="search" placeholder="Search ...">
+            </form>
+
+            <i class="fa fa-search" onclick="slideMin()"></i>
+        </div>
+    </div>
+</header>
+
+<div class="nav">
+    <nav>
+        <a href="">Menu item</a>
+        <a href="">Menu item</a>
+        <a href="">Menu item</a>
+        <a href="">Menu item</a>
+        <a href="">Menu item</a>
+    </nav>
+</div>
+
+<div class="mobileMenu">
+    <button class="menu-toggle"></button>
+    <nav>
+        <ul class="menu">
+            <li data-text="Menu item">Menu item</li>
+            <li data-text="Menu item">Menu item</li>
+            <li data-text="Menu item">Menu item</li>
+            <li data-text="Menu item">Menu item</li>
+            <li data-text="Menu item">Menu item</li>
+            <li data-text="Menu item">Menu item</li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main">
+    <div class="menu2">
+        <ul>
+            <li><a href="">Submenu item 7d</a></li>
+            <li><a href="">Submenu item 5d</a></li>
+            <li>Submenu</li>
+            <li><a href="">Submenu item 7d</a></li>
+            <li><a href="">Submenu item 2d</a></li>
+            <li><a href="">Submenu item 4d</a></li>
+            <li><a href="">More tags</a></li>
+            <li>Submenu</li>
+            <li><a href="">Submenu item 1d</a></li>
+            <li><a href="">Submenu item 1d</a></li>
+            <li>Submenu</li>
+            <li><a href="">Submenu item 4d</a></li>
+            <li><a href="">Submenu item 2d</a></li>
+            <li><a href="">Submenu item1 & Submenu item2 2d</a></li>
+            <li><a href="">Submenu item 7d</a></li>
+            <li><a href="">Submenu item 1d</a></li>
+            <li><a href="">Submenu item 1d</a></li>
+            <li>Submenu</li>
+            <li><a href="">Submenu item 2d</a></li>
+            <li><a href="">Submenu item 1d</a></li>
+            <li><a href="">Submenu item 3d</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Page title in <span>New York </span> <i class="fa fa-angle-down"></i></h1>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Search ...">
+            </form>
+            <div class="item">
+                <span>+ New item</span>
+                <i class="fa fa-sliders"></i>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/1.jpg" alt="Здесь должно быть фото">
+            <div class="contentPost">
+                <span>User name</span>
+                <span class="pro">Pro</span>
+                <p>
+                    <i class="fa fa-comments"></i>
+                    <span>2</span>
+                    <i class="fa fa-clock-o"></i>
+                    <span>20m</span>
+                </p>
+                <p>
+                    Item title 1
+                </p>
+                <p>
+                    Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit
+                    amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra
+                    laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                </p>
+                <span><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/2.jpg" alt="Здесь должно быть фото">
+            <div class="contentPost">
+                <span>User name</span>
+                <span class="pro">Member</span>
+                <p>
+                    <i class="fa fa-comments"></i>
+                    <span>2</span>
+                    <i class="fa fa-clock-o"></i>
+                    <span>20m</span>
+                </p>
+                <p>
+                    Item title 2
+                </p>
+                <p>
+                    Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit
+                    amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra
+                    laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                </p>
+                <span><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/3.jpg" alt="Здесь должно быть фото">
+            <div class="contentPost">
+                <span>User name</span>
+                <span class="pro">Member</span>
+                <p>
+                    <i class="fa fa-comments"></i>
+                    <span>2</span>
+                    <i class="fa fa-clock-o"></i>
+                    <span>20m</span>
+                </p>
+                <p>
+                    Item title 3
+                </p>
+                <p>
+                    Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit
+                    amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra
+                    laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                </p>
+                <span><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+            </div>
+        </div>
+        <div class="post">
+            <img src="images/4.jpg" alt="Здесь должно быть фото">
+            <div class="contentPost">
+                <span>User name</span>
+                <span class="pro">Member</span>
+                <p>
+                    <i class="fa fa-comments"></i>
+                    <span>2</span>
+                    <i class="fa fa-clock-o"></i>
+                    <span>20m</span>
+                </p>
+                <p>
+                    Item title 4
+                </p>
+                <p>
+                    Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit
+                    amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra
+                    laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.
+                </p>
+                <span><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href=""><i class="fa fa-angle-left"></i>Previous</a>
+            <a href="">Next<i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <footer>
+            <nav>
+                <a href="">About</a>
+                <a href="">Policies</a>
+                <a href="">Site map</a>
+                <a href="">Help</a>
+                <a href="">Contact us</a>
+            </nav>
+            <div class="info">
+                <img src="images/logo-min.png" alt="Здесь должно быть фото">
+                <span>&copy; 2015. Qulix Systems. All rights reserved.</span>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
